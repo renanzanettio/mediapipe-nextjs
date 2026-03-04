@@ -1,11 +1,9 @@
-.reverseContainer {
-  width: 100%;
-  display: flex;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  background-color: var(--primary-offwhite-500);
+.video{
+	height: 0px;
+	width: 0px;
 }
+
+
 
 .mainContainer {
     width: 100%;
