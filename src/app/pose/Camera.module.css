@@ -87,6 +87,59 @@
 	display: none !important;
 }
 
+/* Session stats panel */
+.statsPanel {
+	display: flex;
+	gap: 1.25rem;
+	background: #f5f3ff;
+	border: 1px solid #e0d9ff;
+	border-radius: 10px;
+	padding: 0.875rem 1.25rem;
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 640px;
+	justify-content: space-around;
+}
+
+.statItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.statLabel {
+	font-size: 0.72rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #7c6ab0;
+}
+
+.statValue {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #1a1a2e;
+	line-height: 1;
+}
+
+.statValue.correct {
+	color: #16a34a;
+}
+
+.statValue.incorrect {
+	color: #dc2626;
+}
+
+/* Danger button (finish session) */
+.buttonDanger {
+	background: linear-gradient(180deg, #b91c1c, #ef4444);
+}
+
+.buttonDanger:hover {
+	box-shadow: 0 6px 18px rgba(185, 28, 28, 0.25);
+}
+
 @media (max-width: 720px) {
 	.card {
 		padding: 1rem;
